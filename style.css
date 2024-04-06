@@ -126,3 +126,7 @@ h1.bottom {
   object-fit: cover;
   border-radius: 5px;
 }
+
+.alligator {
+  object-position: 80% 20%;
+}
