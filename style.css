@@ -27,6 +27,11 @@
   padding-right: 0.2rem;
 }
 
+.btn.center {
+  display: block;
+  margin: auto;
+}
+
 /* Navbar */
 .main-nav {
   display: flex;
@@ -129,4 +134,20 @@ h1.bottom {
 
 .alligator {
   object-position: 80% 20%;
+}
+
+/* Section D: Pets */
+.pets-container {
+  padding: 5rem 7rem;
+}
+
+.pets-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  color: #333333;
+}
+
+.second {
+  padding-bottom: 5rem;
 }
