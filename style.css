@@ -146,70 +146,66 @@ h1.bottom {
 }
 
 /* Section B: How it works */
-.section-works{
+.section-works {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container__works{
+.container__works {
   display: flex;
   flex-direction: column;
   width: 70%;
-
 }
-.h2_title{
+.h2_title {
   padding-top: 100px;
   padding-bottom: 50px;
   font-size: 3em;
   font-weight: 900;
-  font-family: 'Roboto', sans-serif, serif;
+  font-family: "Roboto", sans-serif, serif;
 }
-.sec-2__desc{
-  font-family:'Roboto', sans-serif, serif ;
+.sec-2__desc {
+  font-family: "Roboto", sans-serif, serif;
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 40px;
 }
-.image__section-2{
+.image__section-2 {
   width: 100%;
   margin-bottom: 100px;
 }
-.btn__sec-2{
+.btn__sec-2 {
   margin-bottom: 100px;
 }
 
 /* Section C: Our mission */
-.container__mission{
+.container__mission {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
 }
-.block_3{
+.block_3 {
   width: 380px;
   height: 213px;
   display: flex;
   flex-direction: column;
   padding-left: 150px;
-
 }
-.block_3__logo{
+.block_3__logo {
   width: 80px;
   height: 80px;
 }
-.h3__title{
-  font-family: 'Roboto', sans-serif, serif;
+.h3__title {
+  font-family: "Roboto", sans-serif, serif;
   font-weight: 900;
   font-size: 1.5em;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.title-3__desc{
-  font-family: 'Roboto', sans-serif, serif;
+.title-3__desc {
+  font-family: "Roboto", sans-serif, serif;
   font-weight: 400;
   font-size: 14px;
-
 }
 
 /* Section D: Pets */
