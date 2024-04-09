@@ -130,3 +130,69 @@ h1.bottom {
 .alligator {
   object-position: 80% 20%;
 }
+
+/* Pay */
+
+.border-n {
+  border: 1px solid red;
+}
+
+.section-pay {
+  width: 100vw;
+  max-height: fit-content;
+  background-color: #f2f2f2;
+}
+
+.pay-text, .opportunity-text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.pay-text {
+font-weight: 900;
+font-size: 48px;
+text-align: center;
+color: #333;
+margin-top: 5%;
+}
+
+.opportunity-text {
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+color: #4f4f4f;
+margin-top: 3vh;
+}
+
+.pay-container {
+  width: 70vw;
+  height: 45vh;
+  margin: 0 auto;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1fr 0.7fr 1fr;
+  grid-template-rows: 45vh;
+  justify-content: center;
+}
+
+.circle-text {
+font-family: "Roboto", sans-serif;
+font-weight: 900;
+font-size: 1.5vw;
+color: #4f4f4f;
+}
+
+.pay-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.pay-block_circle {
+  background-image: url(./assets/images/Ellipse.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20%;
+}
+
