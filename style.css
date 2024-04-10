@@ -422,29 +422,31 @@ h5.address-title {
   padding-bottom: 0.5rem;
 }
 
-/* Pay */
+/* E, F, G */
 
-.border-n {
-  border: 1px solid red;
-}
-
-.section-pay {
+.section-pay, .section-map {
   width: 100vw;
-  max-height: fit-content;
+  height: 90vh ;
   background-color: #f2f2f2;
 }
 
-.pay-text, .opportunity-text {
+.section-testimonials {
+width: 100vw;
+height: 75vh;
+background-color: #fff;
+}
+
+.h1-text, .opportunity-text {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
-.pay-text {
+.h1-text {
 font-weight: 900;
-font-size: 48px;
-text-align: center;
+font-size: 2.5vw;
 color: #333;
-margin-top: 5%;
+padding-top: 5vh;
+
 }
 
 .opportunity-text {
@@ -486,4 +488,102 @@ color: #4f4f4f;
   background-size: contain;
   margin-top: 20%;
 }
+
+.donate-feedback {
+width: 13vw;
+height: 4.5vh;
+}
+
+.pay-button {
+  margin-top: 6vh;
+}
+
+.testimonials-container {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4%;
+}
+
+.testimonials-block {
+  border-radius: 5px;
+  width: 35vw;
+  height: 30vh;
+  box-shadow: 2px 4px 15px 0 rgba(6, 12, 70, 0.1);
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.testimonials-name {
+font-family: "Roboto", sans-serif;
+font-weight: 900;
+font-size: 20px;
+color: #333;
+}
+
+.testimonials-p {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 14px;
+color: #4f4f4f;
+text-align: center;
+}
+
+.feedback-button {
+  margin-top: -20vh;
+}
+
+.map-eagle {
+width: 25vw;
+height: 18vh;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: #fff;
+position: absolute;
+margin-top: 10%;
+margin-left: 2.5%
+}
+
+.map-eagle span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  }
+  
+  .map-eagle p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4f4f4f;
+    }
+
+.bald {
+font-weight: 900;
+font-size: 1rem;
+color: #333;
+    }
+  
+.map-image {
+width: 60vw;
+height: 63vh;
+background-image: url(./assets/images/Map.png);
+background-repeat: no-repeat;
+background-size: contain;
+margin: 0 auto;
+margin-top: 3vh;
+}
+  
+.btn-map {
+  margin: 0 auto;
+}
+
+
 
