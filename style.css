@@ -682,7 +682,7 @@ h5.address-title {
 }
 .section__main-screen {
   display: flex;
-  height: 900px;
+  height: 950px;
 }
 /* Aside*/
 .aside__animal {
@@ -742,6 +742,12 @@ h5.address-title {
 .btn__animal {
   margin-top: 50px;
 }
+.description {
+  text-align: left;
+}
+
+
+
 .popup__content {
   background: #f9f9f9;
   padding: 5rem 5rem;
