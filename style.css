@@ -41,6 +41,10 @@
   font-size: 0.7rem;
 }
 
+.noline {
+  text-decoration: none;
+}
+
 /* Navbar */
 .main-nav {
   display: flex;
@@ -212,15 +216,15 @@ h1.bottom {
 .h2_title {
   padding-top: 100px;
   padding-bottom: 50px;
-  font-size: 3em;
+  font-size: 2.5vw;
   font-weight: 900;
-  font-family: "Roboto", sans-serif, serif;
+  color: #333;
 }
 .sec-2__desc {
-  font-family: "Roboto", sans-serif, serif;
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 40px;
+  color: #4f4f4f;
 }
 .image__section-2 {
   width: 100%;
@@ -231,33 +235,47 @@ h1.bottom {
 }
 
 /* Section C: Our mission */
+
 .container__mission {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 50vh;
+  background-color: #f2f2f2;
+  padding: 0 10rem;
+  gap: 3rem;
 }
 .block_3 {
   width: 380px;
   height: 213px;
   display: flex;
   flex-direction: column;
-  padding-left: 150px;
+  align-items: center;
 }
+
 .block_3__logo {
   width: 80px;
   height: 80px;
+  display: flex;
+  justify-content: center;
 }
+
+.block_3__logo img {
+  display: flex;
+  align-items: center;
+}
+
 .h3__title {
-  font-family: "Roboto", sans-serif, serif;
   font-weight: 900;
   font-size: 1.5em;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .title-3__desc {
-  font-family: "Roboto", sans-serif, serif;
   font-weight: 400;
   font-size: 14px;
+  text-align: center;
 }
 
 /* Section D: Pets */
@@ -266,14 +284,13 @@ h1.bottom {
 }
 
 .pets-container h1 {
-  text-align: center;
-  font-size: 2rem;
-  padding-bottom: 1.5rem;
-  color: #333333;
+  padding-bottom: 3rem;
 }
 
 .second {
   padding-bottom: 5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
 /* Footer */
@@ -494,7 +511,6 @@ h5.address-title {
 .h1-text,
 .opportunity-text {
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 
 .h1-text {

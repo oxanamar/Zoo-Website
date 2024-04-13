@@ -22,7 +22,7 @@
             <li><a href="index.html">About</a></li>
             <li><a href="zoos-panda.html" class="current">Zoos</a></li>
             <li><a href="map.html">Map</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Contact Us</a></li>
             <li><a href="#">Design</a></li>
           </ul>
         </nav>
@@ -31,45 +31,190 @@
     <!-- Section Eagle: Main -->
     <div class="main__part">
       <div class="section__main-screen">
-          <!--Aside-->
-          <aside class="aside__animal">
-              <img src="./assets/images/main-panda.png" alt="panda" class="pic_circle">
-              <img src="./assets/images/main-eagle.png" alt="eagle" class="pic_circle">
-              <img src="./assets/images/main-alligator.png" alt="alligator" class="pic_circle">
-              <img src="./assets/images/main-gorilla.png" alt="main-gorilla" class="pic_circle">
-          </aside>
-          <!--Middle-->
-          <div class="middle__part">
-              <div class="container__middle">
-                  <h2 class="h2_title">West End Bald Eagle Cam</h2>
-                  <video class="video__large" src="./assets/images/video/eagle.mp4" autoplay muted></video>
-                  <div class="small__part-video">
-                      <video class="video__small" src="./assets/images/video/eagle.mp4" autoplay muted></video>
-                      <video class="video__small" src="./assets/images/video/eagle.mp4" autoplay muted></video>
-                      <video 
-                     class="video__small" src="./assets/images/video/eagle.mp4" autoplay muted></video>
-                  </div>
-              </div>
+        <!--Aside-->
+        <aside class="aside__animal">
+          <img
+            src="./assets/images/main-panda.png"
+            alt="panda"
+            class="pic_circle"
+          />
+          <img
+            src="./assets/images/main-eagle.png"
+            alt="eagle"
+            class="pic_circle"
+          />
+          <img
+            src="./assets/images/main-alligator.png"
+            alt="alligator"
+            class="pic_circle"
+          />
+          <img
+            src="./assets/images/main-gorilla.png"
+            alt="main-gorilla"
+            class="pic_circle"
+          />
+        </aside>
+        <!--Middle-->
+        <div class="middle__part">
+          <div class="container__middle">
+            <h2 class="h2_title">West End Bald Eagle Cam</h2>
+            <video
+              class="video__large"
+              src="./assets/images/video/eagle.mp4"
+              autoplay
+              muted
+            ></video>
+            <div class="small__part-video">
+              <video
+                class="video__small"
+                src="./assets/images/video/eagle.mp4"
+                autoplay
+                muted
+              ></video>
+              <video
+                class="video__small"
+                src="./assets/images/video/eagle.mp4"
+                autoplay
+                muted
+              ></video>
+              <video
+                class="video__small"
+                src="./assets/images/video/eagle.mp4"
+                autoplay
+                muted
+              ></video>
+            </div>
           </div>
-          <!--Right Part-->
-          <div class="right__part">
-              <div class="container__right">
-                  <h3 class="h3__title">Population:</h3>
-                  <div class="title-3__desc">More than 270 pairs in 2013</div>
-                  <h3 class="h3__title">Habitat:</h3>
-                  <div class="title-3__desc">Typically nest in forested areas adjacent to large bodies of water</div>
-                  <h3 class="h3__title">Diet:</h3>
-                  <div class="title-3__desc">Main live prey consists of medium sized mammals and birds such as rabbits, hares, grouse and ptarmigan. The diet of coastal birds includes gulls and other seabirds.</div>
-                  <button class="btn btn__sec-2 btn__animal" >
-                  <img src="./assets/images/btn-img.svg" alt="button_2" />
-                  <p>FEED</p>
-          </button>
-              </div>
+        </div>
+        <!--Right Part-->
+        <div class="right__part">
+          <div class="container__right">
+            <h3 class="h3__title">Population:</h3>
+            <div class="title-3__desc">More than 270 pairs in 2013</div>
+            <h3 class="h3__title">Habitat:</h3>
+            <div class="title-3__desc">
+              Typically nest in forested areas adjacent to large bodies of water
+            </div>
+            <h3 class="h3__title">Diet:</h3>
+            <div class="title-3__desc">
+              Main live prey consists of medium sized mammals and birds such as
+              rabbits, hares, grouse and ptarmigan. The diet of coastal birds
+              includes gulls and other seabirds.
+            </div>
+            <button class="btn btn__sec-2 btn__animal">
+              <img src="./assets/images/btn-img.svg" alt="button_2" />
+              <p>FEED</p>
+            </button>
           </div>
-
+        </div>
       </div>
-  </div>
+    </div>
     <!-- Footer -->
-    <footer class="footer-main"></footer>
+    <!-- Footer -->
+    <footer class="footer-main">
+      <div class="footer-container">
+        <div class="footer-container-top">
+          <div class="footer-part1">
+            <img class="footer-logo" src="./assets/images/logo-dark.svg" />
+            <h4>Contact us</h4>
+            <form class="footer-contact" action="#">
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                class="text-input border-input"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                class="text-input border-input"
+              />
+              <fieldset class="footer-fieldset">
+                <legend>Please enter your message</legend>
+                <textarea
+                  name="message"
+                  cols="50"
+                  rows="6"
+                  class="text-input"
+                ></textarea>
+              </fieldset>
+              <label class="footer-checkbox small">
+                <input
+                  type="checkbox"
+                  placeholder="Please enter your message"
+                  name="agree"
+                />
+                I agree to the processing of Personal Data
+                <span class="checkbox-container"></span>
+              </label>
+            </form>
+            <button class="btn-footer">
+              <p class="uppercase">Send</p>
+              <img src="./assets/images/Arrow .svg" alt="arrow" />
+            </button>
+          </div>
+          <div class="footer-part2">
+            <div class="links">
+              <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="zoos-panda.html">Zoos</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="#">Design</a></li>
+              </ul>
+            </div>
+            <div class="footer-address">
+              <h5 class="uppercase address-title">ZOO Online Centre</h5>
+              <h5>132, Address District, Street</h5>
+              <h5 class="open-hours">Open Daily 10:00 am - 5:00 pm</h5>
+              <h5>T(702) 163-3433</h5>
+              <h5>zoo.online@gmail.com</h5>
+            </div>
+            <div class="content_socials footer-socials">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./assets/images/instagram.svg"
+                      alt="instagram logo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/twitter.svg" alt="twitter logo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/youtube.svg" alt="youtube logo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/images/vk.svg" alt="vk logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-part3">
+            <a class="noline" href="#popup1">
+              <button class="btn">
+                <p>donate for volunteers</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="footer-container-bottom">
+          <div class="bottom-line"></div>
+          <div class="copyright">
+            <p class="small copyright-top">Copyright &copy;Noora Sagnayeva</p>
+            <p class="small">
+              Copyright &copy;RSSchool and ©Yem Digital - 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
