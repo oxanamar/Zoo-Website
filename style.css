@@ -361,9 +361,14 @@ h1.bottom {
 }
 
 .second {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   padding-right: 3rem;
   padding-left: 3rem;
+  z-index: -3;
 }
 
 /* Footer */
@@ -419,6 +424,7 @@ h1.bottom {
   position: relative;
   cursor: pointer;
   color: #bdbdbd;
+  z-index: -1;
 }
 
 .footer-checkbox input[type="checkbox"] {
@@ -694,6 +700,7 @@ h5.address-title {
   position: absolute;
   margin-top: 10%;
   margin-left: 2.5%;
+  z-index: -3;
 }
 
 .map-eagle span {
@@ -740,12 +747,14 @@ h5.address-title {
   width: 80%;
   height: 80%;
   position: relative;
+  /* z-index: 999; */
 }
 
 .popup__img img {
   width: 197px;
   height: 650px;
   flex-shrink: 0;
+  /* z-index: 999; */
 }
 
 /* screen animal Panda*/
