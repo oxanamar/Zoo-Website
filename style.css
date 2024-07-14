@@ -152,7 +152,7 @@
 .main_container {
   background: url("./assets/images/main-background.png") no-repeat center/cover;
   /* height: 90vh; */
-  height: 740px;
+  min-height: 740px;
   width: 100%;
   padding-left: 7rem;
   padding-right: 7rem;
@@ -181,6 +181,7 @@ h1.bottom {
 .content_socials {
   display: flex;
   align-items: end;
+  padding-bottom: 2rem;
 }
 
 .content_socials li {
@@ -192,10 +193,13 @@ h1.bottom {
 }
 
 .content_gallery {
+  /* display: flex;
+  flex-direction: row; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 /* Hover effect */
@@ -424,7 +428,7 @@ h1.bottom {
   position: relative;
   cursor: pointer;
   color: #bdbdbd;
-  z-index: -1;
+  z-index: 0;
 }
 
 .footer-checkbox input[type="checkbox"] {
@@ -700,7 +704,7 @@ h5.address-title {
   position: absolute;
   margin-top: 10%;
   margin-left: 2.5%;
-  z-index: -3;
+  z-index: 0;
 }
 
 .map-eagle span {
