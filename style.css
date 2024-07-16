@@ -637,10 +637,14 @@ h5.address-title {
 }
 
 .pay-block_circle {
+  display: flex;
   background-image: url(./assets/images/Ellipse.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 20%;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
 }
 
 .donate-feedback {
@@ -1038,4 +1042,14 @@ h5.address-title {
   .hamb {
     display: none;
   }
+}
+
+.test-svg {
+  align-items: center;
+  justify-content: center;
+}
+
+.test-p {
+  align-items: center;
+  justify-content: center;
 }
