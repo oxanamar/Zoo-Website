@@ -278,6 +278,7 @@ h1.bottom {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem 15rem;
 }
 .container__works {
   display: flex;
@@ -285,7 +286,7 @@ h1.bottom {
   width: 70%;
 }
 .h2_title {
-  padding-top: 100px;
+  padding-top: 5vh;
   padding-bottom: 50px;
   font-size: 2.5vw;
   font-weight: 900;
@@ -300,14 +301,15 @@ h1.bottom {
 
 .img-container {
   width: 100%;
+  /* width: 790px; */
+  height: 423px;
+  padding-bottom: 3rem;
 }
 
 .image__section-2 {
   width: 100%;
-  /* object-position: 15% 20%; */
-  margin-bottom: 100px;
-}
-.btn__sec-2 {
+  max-height: 100%;
+  object-position: left bottom;
   margin-bottom: 100px;
 }
 
@@ -577,18 +579,29 @@ h5.address-title {
 }
 
 /* E, F, G */
+.section-pay {
+  padding: 5rem 10rem;
+}
 
 .section-pay,
 .section-map {
   width: 100vw;
-  height: 90vh;
+  /* height: 90vh; */
+  min-height: 660px;
   background-color: #f2f2f2;
+  min-height: 660px;
 }
 
 .section-testimonials {
   width: 100vw;
-  height: 75vh;
+  /* height: 75vh; */
+  min-height: 480px;
   background-color: #fff;
+  padding: 5rem 0rem;
+}
+
+.section-map {
+  padding: 5rem 0rem;
 }
 
 .h1-text,
@@ -620,6 +633,7 @@ h5.address-title {
   grid-template-columns: 1fr 0.7fr 1fr 0.7fr 1fr;
   grid-template-rows: 45vh;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .circle-text {
@@ -641,7 +655,7 @@ h5.address-title {
   background-image: url(./assets/images/Ellipse.png);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 20%;
+  /* margin-top: 20%; */
   width: 100%;
   height: 100%;
   background-position: center center;
