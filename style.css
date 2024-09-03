@@ -47,18 +47,21 @@
 
 /* Navbar */
 .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
   position: sticky;
   top: 0;
   width: 100%;
   min-height: 12vh;
+  padding: 0 20px;
+  z-index: 1000;
 }
 
 .logo {
   display: inline-block;
-  margin-left: 20px;
-  margin-top: 18px;
 }
 
 .logo img {
@@ -67,27 +70,46 @@
 }
 
 .nav {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  overflow: hidden;
-  background: #fff;
+  display: flex;
+  align-items: center;
   /* box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08); */
 }
 
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 3rem;
+}
+
 .menu a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: #333333;
-  padding: 30px;
+  /* padding: 30px; */
   font-weight: 400;
-  /* border-bottom: 2px transparent solid; */
+  border-bottom: 2px transparent solid;
   padding-bottom: 0.2rem;
+  transition: border-color 0.3s ease;
+  /* position: relative; */
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 
 .menu a:hover {
   font-weight: 700;
   background-color: #fff;
+  border-bottom-color: #333333;
 }
 
 .nav {
