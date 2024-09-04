@@ -72,9 +72,11 @@
               </li>
             </ul>
           </div>
-          <div class="content_gallery">
-            <div class="image-fig">
-              <img src="./assets/images/main-eagle.png" alt="" />
+          <div class="content_gallery slider-container">
+            <div class="slider">
+              <!-- Slide 1 -->
+            <div class="slide image-fig ">
+              <img src="./assets/images/main-eagle.png" alt="Eagle" />
               <div class="content">
                 <p>
                   Eagle’s name is Cam. He is 2 years old. Cam is from
@@ -96,8 +98,9 @@
                 </div>
               </div>
             </div>
-            <div class="image-fig">
-              <img src="./assets/images/main-panda.png" alt="" />
+            <!-- Slide 2 -->
+            <div class="slide image-fig">
+              <img src="./assets/images/main-panda.png" alt="Panda" />
               <div class="content">
                 <p>
                   Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from
@@ -119,8 +122,9 @@
                 </div>
               </div>
             </div>
-            <div class="image-fig">
-              <img src="./assets/images/main-gorilla.png" alt="" />
+            <!-- Slide 3 -->
+            <div class="slide image-fig">
+              <img src="./assets/images/main-gorilla.png" alt="Gorilla" />
               <div class="content">
                 <p>
                   Gorilla’s name is Grace. She is 4 years old. Grace is from
@@ -142,11 +146,124 @@
                 </div>
               </div>
             </div>
-            <div class="image-fig">
+            <!-- Slide 4 -->
+            <div class="slide image-fig">
               <img
                 class="alligator"
                 src="./assets/images/main-alligator.png"
-                alt=""
+                alt="Alligator"
+              />
+              <div class="content">
+                <p>
+                  Alligator's name is John. He is 2 years old. John is from
+                  Australia. He loves frogs.
+                </p>
+                <div class="logo-images">
+                  <div class="watch-online">
+                    <a href="./zoos-alligator.html" target="_blank"
+                      ><img
+                        src="./assets/images/logo-watch online.svg"
+                        alt="watch online"
+                    /></a>
+                  </div>
+                  <div class="donate">
+                    <a href="#popup1"
+                      ><img src="./assets/images/logo-donate.svg" alt="donate"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="slide image-fig">
+              <img
+                class="alligator"
+                src="./assets/images/main-alligator.png"
+                alt="Alligator"
+              />
+              <div class="content">
+                <p>
+                  Alligator's name is John. He is 2 years old. John is from
+                  Australia. He loves frogs.
+                </p>
+                <div class="logo-images">
+                  <div class="watch-online">
+                    <a href="./zoos-alligator.html" target="_blank"
+                      ><img
+                        src="./assets/images/logo-watch online.svg"
+                        alt="watch online"
+                    /></a>
+                  </div>
+                  <div class="donate">
+                    <a href="#popup1"
+                      ><img src="./assets/images/logo-donate.svg" alt="donate"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="slide image-fig">
+              <img
+                class="alligator"
+                src="./assets/images/main-alligator.png"
+                alt="Alligator"
+              />
+              <div class="content">
+                <p>
+                  Alligator's name is John. He is 2 years old. John is from
+                  Australia. He loves frogs.
+                </p>
+                <div class="logo-images">
+                  <div class="watch-online">
+                    <a href="./zoos-alligator.html" target="_blank"
+                      ><img
+                        src="./assets/images/logo-watch online.svg"
+                        alt="watch online"
+                    /></a>
+                  </div>
+                  <div class="donate">
+                    <a href="#popup1"
+                      ><img src="./assets/images/logo-donate.svg" alt="donate"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 7 -->
+            <div class="slide image-fig">
+              <img
+                class="alligator"
+                src="./assets/images/main-alligator.png"
+                alt="Alligator"
+              />
+              <div class="content">
+                <p>
+                  Alligator's name is John. He is 2 years old. John is from
+                  Australia. He loves frogs.
+                </p>
+                <div class="logo-images">
+                  <div class="watch-online">
+                    <a href="./zoos-alligator.html" target="_blank"
+                      ><img
+                        src="./assets/images/logo-watch online.svg"
+                        alt="watch online"
+                    /></a>
+                  </div>
+                  <div class="donate">
+                    <a href="#popup1"
+                      ><img src="./assets/images/logo-donate.svg" alt="donate"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 8 -->
+            <div class="slide image-fig">
+              <img
+                class="alligator"
+                src="./assets/images/main-alligator.png"
+                alt="Alligator"
               />
               <div class="content">
                 <p>
@@ -170,8 +287,15 @@
               </div>
             </div>
           </div>
-        </div>
-
+              <!-- Slider control -->
+              <div class="slider-control-container">
+                <input type="range" min="1" max="8" value="1" id="slider-range" />
+                <div class="slider-pagination">
+                  <span id="current-slide">01</span>/<span id="total-slides">08</span>
+                </div>
+            </div>
+          </div>
+  
         <!-- Pop-up -->
         <div id="popup1" class="overlay">
           <div class="popup">
@@ -1016,5 +1140,40 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll('.slide');
+  const sliderRange = document.getElementById('slider-range');
+  const currentSlideElement = document.getElementById('current-slide');
+  const totalSlides = slides.length;
+  let currentSlide = 0;
+
+  function updateSlider() {
+    // Update the transform property to show the active slide
+    slides.forEach((slide, index) => {
+      slide.classList.remove('active');
+      if (index === currentSlide) {
+        slide.classList.add('active');
+      }
+    });
+
+    const offset = currentSlide * -150; // Adjust the offset to match slide width
+    document.querySelector('.slider').style.transform = `translateX(${offset}px)`;
+
+    // Update the pagination
+    currentSlideElement.textContent = ('0' + (currentSlide + 1)).slice(-2);
+    sliderRange.value = currentSlide + 1;
+  }
+
+  sliderRange.addEventListener('input', (e) => {
+    currentSlide = parseInt(e.target.value) - 1;
+    updateSlider();
+  });
+
+  updateSlider(); // Initialize slider
+});
+
+
+      </script>
   </body>
 </html>
