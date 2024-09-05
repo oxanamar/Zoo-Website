@@ -289,7 +289,7 @@
           </div>
               <!-- Slider control -->
               <div class="slider-control-container">
-                <input type="range" min="1" max="8" value="1" id="slider-range" />
+                <input type="range" min="1" max="8" value="3" id="slider-range" />
                 <div class="slider-pagination">
                   <span id="current-slide">01</span>/<span id="total-slides">08</span>
                 </div>
@@ -1146,14 +1146,17 @@
   const sliderRange = document.getElementById('slider-range');
   const currentSlideElement = document.getElementById('current-slide');
   const totalSlides = slides.length;
-  let currentSlide = 0;
+  let currentSlide = 2;
+  
 
   function updateSlider() {
     // Update the transform property to show the active slide
     slides.forEach((slide, index) => {
       slide.classList.remove('active');
+      slide.querySelector('.content').style.display = 'none';
       if (index === currentSlide) {
         slide.classList.add('active');
+        slide.querySelector('.content').style.display = 'block';
       }
     });
 
@@ -1168,6 +1171,13 @@
   sliderRange.addEventListener('input', (e) => {
     currentSlide = parseInt(e.target.value) - 1;
     updateSlider();
+  });
+
+  slides.forEach((slide, index) => {
+    slide.addEventListener('click', () => {
+      currentSlide = index;
+      updateSlider();
+    });
   });
 
   updateSlider(); // Initialize slider
