@@ -1160,7 +1160,8 @@
       }
     });
 
-    const offset = currentSlide * -150; // Adjust the offset to match slide width
+    // Calculate the offset to always keep the active slide in the center
+    const offset = (currentSlide - 2) * -150; // Assuming each slide is 150px wide, adjust as needed
     document.querySelector('.slider').style.transform = `translateX(${offset}px)`;
 
     // Update the pagination
@@ -1168,11 +1169,13 @@
     sliderRange.value = currentSlide + 1;
   }
 
+  // Event listener for range input
   sliderRange.addEventListener('input', (e) => {
     currentSlide = parseInt(e.target.value) - 1;
     updateSlider();
   });
 
+  // Event listener for clicking on slides
   slides.forEach((slide, index) => {
     slide.addEventListener('click', () => {
       currentSlide = index;
