@@ -1,4 +1,4 @@
-# Responsive Zoo Website 🐼🦍
+# Responsive Zoo Website 🐼🦁🦍🦘🐨🐒
 
 Welcome to the **Responsive Zoo Website**!
 
