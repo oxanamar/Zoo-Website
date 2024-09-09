@@ -177,7 +177,7 @@
   min-height: 740px;
   width: 100%;
   padding-left: 7rem;
-  padding-right: 7rem;
+  /* padding-right: 7rem; */
   padding-top: 3rem;
 }
 
@@ -197,13 +197,13 @@ h1.bottom {
 
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .content_socials {
   display: flex;
   align-items: end;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .content_socials li {
@@ -225,14 +225,14 @@ h1.bottom {
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 20px;
+  gap: 46px;
   width: calc(100% / 5 * 7);
   transform: translateX(0);
 }
 
 .slide {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 120px;
+  max-width: 120px;
   transition: transform 0.5s ease, opacity 0.5s ease;
   position: relative;
   cursor: pointer;
@@ -246,11 +246,6 @@ h1.bottom {
 }
 
 .content_gallery {
-  /* display: flex;
-  flex-direction: row; */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
   padding-top: 5rem;
   padding-bottom: 4rem;
 }
@@ -304,9 +299,10 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 18px;
   color: #fff;
   position: absolute;
-  top: -30px; /* Adjust position */
+  bottom: -20px; /* Adjust position */
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100;
 }
 
 /* Hover effect */
