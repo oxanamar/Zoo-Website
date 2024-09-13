@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -262,6 +267,28 @@ h1.bottom {
 .content_gallery img {
   width: 100%;
   border-radius: 3px;
+}
+
+.slider-line {
+  position: absolute;
+  top: 35%;
+  width: calc(100% + 100px);
+  height: 2px;
+  background-color: #fff;
+  margin: 20px 0;
+  z-index: 0;
+}
+
+.circle {
+  position: absolute;
+  top: -5px;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .slider-control-container {
