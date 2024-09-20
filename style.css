@@ -279,6 +279,7 @@ h1.bottom {
   background-color: #fff;
   margin: 20px 0;
   z-index: 0;
+  /* transform: translateY(-50%); */
 }
 
 .circle {
@@ -288,9 +289,17 @@ h1.bottom {
   width: 12px;
   height: 12px;
   background-color: #fff;
-  border-color: #fff;
+  border: 2px solid white;
+  background-color: transparent;
   border-radius: 50%;
   z-index: 2;
+}
+
+.inner-circle {
+  width: 4px; /* Adjust size of inner circle */
+  height: 4px;
+  background-color: white; /* Inner circle color */
+  border-radius: 50%;
 }
 
 .slider-control-container {
