@@ -1,6 +1,6 @@
-# Responsive Zoo Website 🐼🦁🦍🦘🐨🐒
+# Zoo Website 🐼🦁🦍🦘🐨🐒
 
-Welcome to the **Responsive Zoo Website**!
+Welcome to the **Zoo Website**!
 
 This project was created using a **Figma design** and features multiple pages to explore. Users can:
 
@@ -25,7 +25,7 @@ If you’d like to run the project locally, follow these steps:
 Run the following command in your terminal:
 ```bash
 git clone https://github.com/oxanamar/Responsive-Zoo-Website.git
-cd Responsive-Zoo-Website
+cd Zoo-Website
 ```
 
 ### Step 2: Open the Project
