@@ -24,7 +24,7 @@ If you’d like to run the project locally, follow these steps:
 
 Run the following command in your terminal:
 ```bash
-git clone https://github.com/oxanamar/Responsive-Zoo-Website.git
+git clone https://github.com/oxanamar/Zoo-Website.git
 cd Zoo-Website
 ```
 
