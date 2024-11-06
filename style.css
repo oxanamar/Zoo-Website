@@ -369,7 +369,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .image-fig:not(.active):hover {
   transform: scale(1.2);
-  opacity: 0.5;
+  opacity: 1;
   z-index: 2;
 }
 
@@ -531,6 +531,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* Section D: Pets */
 .pets-container {
   padding: 5rem 7rem;
+  /* height: 850px; */
 }
 
 .pets-container h1 {
@@ -747,6 +748,46 @@ h5.address-title {
 .copyright-top {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+}
+
+/* Pets slider-control */
+/* Center the container */
+.pets-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Style for the pagination */
+.pets-slider-pagination {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between pagination and slider */
+}
+
+/* Style for the slider control */
+.pets-slider-control-container {
+  width: 192px; /* Set a fixed width to avoid full-width stretch */
+  text-align: center;
+}
+
+.pets-slider-control-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px; /* Width of the rectangular thumb */
+  height: 10px; /* Height of the rectangular thumb */
+  background: #333; /* Color of the thumb */
+  cursor: pointer;
+}
+
+.pets-slider-control-container input[type="range"]::-moz-range-thumb {
+  width: 23px;
+  height: 10px;
+  background: #333;
+  border-radius: 2px;
 }
 
 /* E, F, G */
